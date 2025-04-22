@@ -1,0 +1,31 @@
+name: .NET CI for CyberSecurityAwrenessBot
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '9.0.x' # Change if you're using a different .NET version
+
+    - name: Restore dependencies
+      run: dotnet restore CyberSecurityAwrenessBot/CyberSecurityAwrenessBot.sln
+
+    - name: Build solution
+      run: dotnet build CyberSecurityAwrenessBot/CyberSecurityAwrenessBot.sln --no-restore --configuration Release
+
+    - name: (Optional) Run tests
+      run: dotnet test CyberSecurityAwrenessBot/CyberSecurityAwrenessBot.sln --no-build --verbosity normal
+      continue-on-error: true
