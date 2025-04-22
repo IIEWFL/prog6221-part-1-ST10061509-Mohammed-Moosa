@@ -1,4 +1,4 @@
-name: .NET CI for CyberSecurityAwarenessBot
+name: .NET CI for CyberSecurityAwrenessBot
 
 on:
   push:
@@ -21,11 +21,11 @@ jobs:
         dotnet-version: '9.0.x' # Change if you're using a different .NET version
 
     - name: Restore dependencies
-      run: dotnet restore CyberSecurityAwarenessBot/CyberSecurityAwarenessBot.sln
+      run: dotnet restore CyberSecurityAwrenessBot/CyberSecurityAwrenessBot.sln
 
     - name: Build solution
-      run: dotnet build CyberSecurityAwarenessBot/CyberSecurityAwarenessBot.sln --no-restore --configuration Release
+      run: dotnet build CyberSecurityAwrenessBot/CyberSecurityAwrenessBot.sln --no-restore --configuration Release
 
     - name: (Optional) Run tests
-      run: dotnet test CyberSecurityAwarenessBot/CyberSecurityAwarenessBot.sln --no-build --verbosity normal
+      run: dotnet test CyberSecurityAwrenessBot/CyberSecurityAwrenessBot.sln --no-build --verbosity normal
       continue-on-error: true
