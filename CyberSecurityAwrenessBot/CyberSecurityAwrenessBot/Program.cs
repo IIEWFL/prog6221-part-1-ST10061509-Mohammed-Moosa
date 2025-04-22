@@ -12,8 +12,18 @@ class Program
         Console.OutputEncoding = System.Text.Encoding.UTF8;
 
         // Play voice greeting from a WAV file
-        SoundPlayer player = new SoundPlayer("Assets/greeting.wav");
-        player.PlaySync();
+        try
+        {
+            SoundPlayer player = new SoundPlayer("Assets/greeting.wav");
+            player.PlaySync();
+        }
+        catch (Exception ex)
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("⚠️  Unable to play greeting audio. Please check that 'Assets/greeting.wav' exists and is a valid WAV file.");
+            Console.ResetColor();
+        }
+
 
         // Display ASCII art inside a red bordered box
         Console.ForegroundColor = ConsoleColor.DarkBlue;
