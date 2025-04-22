@@ -61,9 +61,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\shani\\OneDrive\\Desktop\\prog6221-part-1-ST10061509-Mohammed-Moosa\\CyberSecurityAwrenessBot\\CyberSecurityAwrenessBot\\CyberSecurityAwrenessBot.csproj",
-      "projectName": "CyberSecurityAwrenessBot",
-      "projectPath": "C:\\Users\\shani\\OneDrive\\Desktop\\prog6221-part-1-ST10061509-Mohammed-Moosa\\CyberSecurityAwrenessBot\\CyberSecurityAwrenessBot\\CyberSecurityAwrenessBot.csproj",
+      "projectUniqueName": "C:\\Users\\shani\\OneDrive\\Desktop\\prog6221-part-1-ST10061509-Mohammed-Moosa\\CyberSecurityAwrenessBot\\CyberSecurityAwrenessBot\\CyberSecurityAwarenessBot.csproj",
+      "projectName": "CyberSecurityAwarenessBot",
+      "projectPath": "C:\\Users\\shani\\OneDrive\\Desktop\\prog6221-part-1-ST10061509-Mohammed-Moosa\\CyberSecurityAwrenessBot\\CyberSecurityAwrenessBot\\CyberSecurityAwarenessBot.csproj",
       "packagesPath": "C:\\Users\\shani\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\shani\\OneDrive\\Desktop\\prog6221-part-1-ST10061509-Mohammed-Moosa\\CyberSecurityAwrenessBot\\CyberSecurityAwrenessBot\\obj\\",
       "projectStyle": "PackageReference",
