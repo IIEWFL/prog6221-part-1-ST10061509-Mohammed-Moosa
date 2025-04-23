@@ -1,4 +1,25 @@
-﻿using System;
+// --------------------------------------------------------------------
+// Cybersecurity Awareness Chatbot - Part 1
+// Author: Mohammed Moosa (ST10061509)
+// Institution: Varsity College
+// Module: PROG6221 – Programming 2A
+// Year: 2025
+//
+// Description:
+// A Windows console chatbot that simulates interactive cybersecurity 
+// education. Includes voice greeting, ASCII art, text interaction, 
+// basic question handling, and formatted console output.
+//
+// Attribution Notice:
+// - Sound playback using System.Media.SoundPlayer based on examples from:
+//   https://learn.microsoft.com/en-us/dotnet/api/system.media.soundplayer
+// - ASCII logo formatting and color setup inspired by answers on Stack Overflow:
+//   https://stackoverflow.com/questions/4842424/list-of-ansi-color-escape-sequences
+// - Input validation and formatting inspired by:
+//   https://stackoverflow.com/questions/311318/what-is-the-best-way-to-read-input-from-console-in-c
+// --------------------------------------------------------------------
+
+using System;
 using System.Media;
 using System.Threading;
 using System.IO;
